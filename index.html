@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Event Tech Workshop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <form action="#" method="POST" enctype="multipart/form-data" class="form-container">
+        <h2>Registrasi Event Tech 2026</h2>
+
+        <!-- Validasi: required, minlength, maxlength -->
+        <label for="nama">Nama Lengkap *</label>
+        <input type="text" id="nama" name="nama" minlength="3" maxlength="50" placeholder="Masukkan nama lengkap"
+            required>
+
+        <!-- Validasi: pattern, required -->
+        <label for="nomor_identitas">NIM / Nomor WhatsApp (10-12 Digit Angka) *</label>
+        <input type="text" id="nomor_identitas" name="nomor_identitas" pattern="[0-9]{10,12}"
+            title="Masukkan 10 hingga 12 digit angka saja" placeholder="Contoh: 081234567890" required>
+
+        <!-- Radio: Pilihan tunggal & required -->
+        <fieldset>
+            <legend>Kategori Peserta *</legend>
+            <label><input type="radio" name="kategori" value="mahasiswa" required> Mahasiswa</label>
+            <label><input type="radio" name="kategori" value="umum"> Umum</label>
+        </fieldset>
+
+        <!-- Select: Dropdown & required -->
+        <label for="workshop">Pilihan Sesi Workshop *</label>
+        <select id="workshop" name="workshop" required>
+            <option value="">-- Pilih Sesi Workshop --</option>
+            <option value="frontend">Modern Frontend Web</option>
+            <option value="uiux">UI/UX Product Design</option>
+            <option value="ai">AI & Data Engineering</option>
+        </select>
+
+        <!-- Checkbox: Pilihan opsional banyak -->
+        <fieldset>
+            <legend>Fasilitas Tambahan (Opsional)</legend>
+            <label><input type="checkbox" name="fasilitas[]" value="snack"> Snack & Lunch</label>
+            <label><input type="checkbox" name="fasilitas[]" value="sertifikat"> Sertifikat Fisik</label>
+        </fieldset>
+
+        <!-- Upload: File upload, accept, required -->
+        <label for="berkas">Upload Kartu Identitas / KTM (.pdf, .jpg, .png) *</label>
+        <input type="file" id="berkas" name="berkas" accept=".pdf, .jpg, .png" required>
+
+        <!-- Textarea: minlength, maxlength, required -->
+        <label for="motivasi">Alasan Mengikuti Event (Min. 20 Karakter) *</label>
+        <textarea id="motivasi" name="motivasi" rows="4" minlength="20" maxlength="250"
+            placeholder="Tuliskan motivasi Anda..." required></textarea>
+
+        <button type="submit">Kirim Pendaftaran</button>
+    </form>
+
+</body>
+
+</html>
