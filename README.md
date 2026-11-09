@@ -4,7 +4,7 @@ Proyek ini dibuat untuk memenuhi tugas mata kuliah **Desain Web** (Pertemuan 8: 
 
 ---
 
-## 🛠️ Komponen Form & Aturan Validasi
+## Komponen Form & Aturan Validasi
 
 Sesuai instruksi slide 14, formulir mengimplementasikan elemen-elemen berikut:
 - **Radio Button**: Pemilihan kategori peserta tunggal (`Mahasiswa` / `Umum`).
@@ -21,7 +21,7 @@ Sesuai instruksi slide 14, formulir mengimplementasikan elemen-elemen berikut:
 
 ---
 
-## 🧪 Tabel Test Case Validasi
+## Tabel Test Case Validasi
 
 Pengujian dilakukan pada peramban (*client-side browser validation*) dengan 5 skenario masukan yang salah:
 
@@ -35,7 +35,7 @@ Pengujian dilakukan pada peramban (*client-side browser validation*) dengan 5 sk
 
 ---
 
-## 🛡️ Analisis Validasi Sisi Server (Server-Side)
+## Analisis Validasi Sisi Server (Server-Side)
 
 Validasi bawaan HTML5 di peramban hanya ditujukan untuk kenyamanan pengguna (*user experience*), bukan lapisan keamanan. Pengguna dapat dengan mudah memodifikasi atau menghapus atribut HTML melalui *Developer Tools* atau mengirim permintaan langsung lewat cURL/Postman.
 
@@ -53,7 +53,7 @@ Oleh karena itu, validasi berikut **wajib diimplementasikan ulang di sisi backen
 
 ---
 
-## 📝 Ringkasan Perubahan, Masalah, dan Solusi (178 Kata)
+## Ringkasan Perubahan, Masalah, dan Solusi (178 Kata)
 
 Dalam pembuatan formulir registrasi event ini, struktur formulir dibangun menggunakan elemen HTML5 lengkap meliputi radio button, checkbox, select dropdown, textarea, dan file upload. Desain visual dikemas sesederhana mungkin dengan CSS eksternal tanpa framework tambahan untuk menjaga kecepatan muat dan keterbacaan kode.
 
@@ -63,8 +63,6 @@ Solusi dari kendala tata letak diatasi dengan menerapkan selektor `box-sizing: b
 
 ---
 
-## 👥 Catatan Pengembang
-- **Nama Praktikan**: [Nama Anda]
-- **NIM**: [NIM Anda]
-- **Kelas / Kelompok**: [Kelas / Kelompok Anda]
-- **Peran**: Perancangan struktur form HTML5, integrasi stylesheet eksternal, pengujian skenario test case, dan penyusunan dokumentasi proyek.
+## Catatan Pengembang
+- **Nama Praktikan**: [Saka Laksmana Harimurti]
+- **NPM**: [4525210067]
